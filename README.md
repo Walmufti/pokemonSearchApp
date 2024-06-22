@@ -1,3 +1,5 @@
+![pokeSearchAppGif_3 0](https://github.com/Walmufti/pokemonSearchApp/assets/79267405/c5e12697-917e-4909-8033-ac8f89a88fb4)
+
 # Pokémon Search App
 #### Video Demo: https://youtu.be/GYnhU-XtK3o
 #### Description:
