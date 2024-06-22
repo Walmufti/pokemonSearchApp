@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*pokemon sprite img*/
+#pokemonSprite {
+    height: 20rem;
+    margin-top: 2rem;
+}
+/*pokemon logo img*/
+#pokemonLogo{
+    width: 15rem;
+    margin: 0.5rem;
+}
+
+/*welcome msg*/
+.intro {
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/*intructions*/
+.intro p {
+    margin-top: 2rem;
+    font-size: 13px;
+}
+
+/*search div*/
+.search {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+/*search input*/
+.search input {
+    width: 15rem;
+    height: 2rem;
+    margin-right: 2rem;
+    border: solid 1px #000;
+    border-radius: 0.8rem;
+    padding: 5px;
+    font-size: 13px;
+}
+/*search button*/
+.search button {
+    width: 10rem;
+    font-size: 15px;
+    border: solid 1px #000;
+    border-radius: 0.8rem;
+    color: #fff;
+    background-color: #9f1128;
+} 
+
+/*displayImg div*/
+.displayImg {
+    display: flex;
+    justify-content: center;
+}
+
+/*pokemon info (dex number and type)*/
+/*display none till pokemon is successfully searched*/
+.displayInfo {
+    display: none;
+    text-align: center;
+}
+.displayInfo div{
+    margin-bottom: 1.5rem;
+}
+
+/*suggestion list*/
+.autocomplete {
+    position: relative;
+    display: inline-block;
+}
+.autocomplete-items {
+    position: absolute;
+    list-style-type: none;
+    padding: 0;
+    margin-left: 0.5rem;
+    border: 1px solid #ccc;
+    border-top: none;
+    z-index: 9999;
+    background-color: white;
+    width: 100%;
+    max-height: 200px;
+    overflow-y: auto;
+    width: 14.5rem;
+}
+.autocomplete-item {
+    padding: 10px;
+    cursor: pointer;
+}
+.autocomplete-item:hover {
+    background-color: #f9f9f9;
+}
+
+/*Media*/
+@media only screen and (max-width: 600px) {
+
+    /*intructions*/
+    .intro p {
+        text-align: center;
+    }
+
+    /*pokemon sprite img*/
+    #pokemonSprite {
+        margin-top: 2rem;
+    }
+
+    /*search div*/
+    .search {
+        flex-direction: column;
+        align-items: center;
+    }
+    /*search input*/
+    .search input {
+        margin: 1rem;
+        padding: 0.5rem;
+    }
+    /*search button*/
+    .search button {
+        padding: 0.5rem;
+    }
+    
+  }

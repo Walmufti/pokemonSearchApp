@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>Pokémon Search App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!--welcome message-->
+    <div class="intro">
+        <span>Welcome to my</span>
+        <a href="index.html">
+            <img src="img/pokemonLogo.png" alt="pokemonLogo.png" id="pokemonLogo">
+        </a>
+        <span>Search App</span>
+        <p>Type any pokémon name below to see it's sprite</p>
+    </div>
+
+    <!--Search Box and Button-->
+    <div class="search">
+        <div class="autocomplete">
+            <input type="text" id="pokemonName" placeholder="Enter Pokémon name">
+            <ul id="suggestionList" class="autocomplete-items"></ul>
+        </div>
+        <button id="searchBtn" onclick="fetchData()">Search Pokémon</button>
+    </div>
+    
+    <!--Displayed Pokemon Image-->
+    <div class="displayImg">
+        <img src="spriteImg" alt="Pokemon Sprite" id="pokemonSprite" style="display: none">
+    </div>
+
+    <!--pokemon info-->
+    <div class="displayInfo">
+        <!--Pokemon dex number-->
+        <div>
+            <span>Poké Dex Number:</span>
+            <span id="idNumber"></span>
+        </div>
+
+        <!--Pokemon type-->
+        <div>
+            <span>Type:</span>
+            <span id="type"></span>
+        </div>
+
+        <!--Pokemon stats-->
+        <div>
+            <span id="stats"></span>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
